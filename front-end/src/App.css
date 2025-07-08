@@ -1,0 +1,39 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prend toute la page sans débordement horizontal */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #f9fafb; /* couleur neutre claire */
+  overflow-x: hidden;
+}
+
+/* Si tu veux éviter que le contenu colle trop aux bords */
+body {
+  line-height: 1.6;
+  color: #111827;
+}
+
+/* Utile pour les layouts flex ou grid de base */
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Classe de page pleine largeur */
+.full-width {
+  width: 100%;
+}
+
+/* Classe générique de container centré si besoin */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
