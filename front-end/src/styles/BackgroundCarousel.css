@@ -1,0 +1,74 @@
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-slide img {
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  z-index: 2;
+  width: 90%;
+  max-width: 700px;
+}
+
+.carousel-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-overlay .cta-button {
+  background-color: #ffffff;
+  color: #1a1aff;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.carousel-overlay .cta-button:hover {
+  background-color: #f0f0f0;
+}
+
+
+.carousel-button {
+  margin-top: 1rem;
+  background-color: white;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.carousel .slide img {
+  height: 400px; /* Ajuste à ta convenance : 300px, 500px, etc. */
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-root {
+  max-height: 400px; /* Même valeur que ci-dessus */
+  overflow: hidden;
+  position: relative;
+}

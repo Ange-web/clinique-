@@ -1,80 +1,97 @@
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #f0f4f8;
+  color: #1a1a1a;
+}
+
+/* ===================== HOME ===================== */
 .home {
-  background-color: #f9fafb;
-  font-family: sans-serif;
-}
-
-.home__main {
-  min-height: 100vh;
-}
-
-/* Hero */
-.home__hero {
-  background-color: #1e40af;
-  color: white;
-  text-align: center;
-  padding: 5rem 1rem;
-  /* Supprimer max-width si tu en avais */
   width: 100%;
 }
 
+/* ========== Hero Section ========== */
+.home__hero {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  padding: 5rem 1.5rem;
+  color: white;
+  text-align: center;
+}
 
 .home__hero-content {
-  max-width: 800px;
-  margin: auto;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .home__hero h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.8rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .home__hero p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .home__cta-button {
-  background-color: white;
-  color: #1e40af;
+  background-color: #ffffff;
+  color: #2563eb;
+  font-weight: 600;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: background 0.3s;
+  border-radius: 999px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .home__cta-button:hover {
-  background-color: #f3f4f6;
+  background-color: #f1f5f9;
 }
 
-/* Services */
+/* ========== Services Section ========== */
 .home__services {
-  padding: 4rem 1rem;
-  max-width: 1200px;
-  margin: auto;
+  padding: 4rem 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .home__services h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 2rem;
-  color: #1f2937;
 }
 
 .home__services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
 }
 
 .home__service-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.home__service-card:hover {
+  transform: translateY(-5px);
 }
 
 .home__service-icon {
@@ -82,37 +99,50 @@
   margin-bottom: 1rem;
 }
 
-/* Témoignage */
+.home__service-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.home__service-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ========== Témoignage ========== */
 .home__testimonial {
-  background-color: white;
-  border-top: 1px solid #e5e7eb;
-  padding: 4rem 1rem;
+  background-color: #ffffff;
+  padding: 4rem 1.5rem;
+  border-top: 1px solid #e0e0e0;
 }
 
 .home__testimonial-content {
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }
 
 .home__testimonial h3 {
-  font-size: 1.25rem;
-  color: #374151;
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .home__testimonial p {
-  color: #6b7280;
+  color: #444;
   font-style: italic;
   margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
 .home__testimonial-link {
-  color: #1e40af;
+  color: #2563eb;
   font-weight: 500;
   text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .home__testimonial-link:hover {
-  color: #1e3a8a;
+  color: #1d4ed8;
 }

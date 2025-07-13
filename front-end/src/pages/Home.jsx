@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import "../styles/Home.css";
+import BackgroundCarousel from "../components/BackgroundCarousel";
+
 
 export default function Home() {
   return (
@@ -8,25 +10,35 @@ export default function Home() {
       <Header />
 
       <main className="home__main">
-        {/* Hero section */}
-        <section className="home__hero">
-          <div className="home__hero-content">
-            <h1>Bienvenue à la Clinique Santé+</h1>
-            <p>Des soins de qualité, une équipe humaine, et une prise en charge rapide.</p>
-            <Link to="/appointment" className="home__cta-button">
-              Prendre rendez-vous
-            </Link>
-          </div>
-        </section>
+        
+          <BackgroundCarousel />
+        
 
         {/* Services preview */}
         <section className="home__services">
           <h2>Nos spécialités médicales</h2>
           <div className="home__services-grid">
             {[
+              { title: "Rhumatologie", icon: "🦴" },
+              { title: "Dermatologie", icon: "🌞" },
+              { title: "Dentiste", icon: "🦷" },
+              { title: "Bloc opératoire", icon: "🏥" },
+              { title: "Chirurgie", icon: "🔪" },
+              { title: "Laboratoire", icon: "🔬" },
+              { title: "Pro-pharmacie", icon: "💊" },
+              { title: "Échographie", icon: "🖥️" },
+              { title: "Pneumologie", icon: "💨" },
+              { title: "Médecine Générale", icon: "🩺" },
+              { title: "Urologie", icon: "🚻" },
+              { title: "Médecine du Travail", icon: "📋" },
+              { title: "Suivi Infertilité", icon: "🧬" },
+              { title: "Ambulance", icon: "🚑" },
               { title: "Cardiologie", icon: "❤️" },
+              { title: "Gynécologie", icon: "👩‍⚕️" },
               { title: "Pédiatrie", icon: "🧸" },
-              { title: "Imagerie médicale", icon: "🩻" },
+              { title: "Gastro-entérologie", icon: "🍽️" },
+              { title: "Diabétologie", icon: "🩸" },
+              { title: "Kinésithérapie", icon: "🏃" }
             ].map((service, index) => (
               <div key={index} className="home__service-card">
                 <div className="home__service-icon">{service.icon}</div>

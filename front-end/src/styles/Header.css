@@ -16,6 +16,12 @@
   height: 64px;
 }
 
+.header__logo-img {
+  height: 40px; /* Ajuste la taille selon ton besoin */
+  width: auto;
+  object-fit: contain;
+}
+
 
 .header__logo {
   font-size: 1.5rem;
