@@ -20,7 +20,7 @@ export default function Home() {
           <div className="home__services-grid">
             {[
               { title: "Rhumatologie", icon: "🦴" },
-              { title: "Dermatologie", icon: "🌞" },
+              { title: "Neurologie", icon: "🌞" },
               { title: "Dentiste", icon: "🦷" },
               { title: "Bloc opératoire", icon: "🏥" },
               { title: "Chirurgie", icon: "🔪" },

@@ -8,10 +8,10 @@ export default function Contact() {
       <div className="contact-container">
         <div className="contact-info">
           <h2>Nous contacter</h2>
-          <p>📍 Clinique Santé+ – Douala, Cameroun</p>
-          <p>📞 +237 6XX XX XX XX</p>
-          <p>✉️ contact@cliniquesanteplus.cm</p>
-          <p>🕐 Lundi - Vendredi : 8h à 18h</p>
+          <p>📍 Clinique compassion 3s – Douala, Cameroun</p>
+          <p>📞 +237 6 57 40 24 90</p>
+          <p>✉️ lacliniquecompassions@gmail.com</p>
+          <p>🕐 24h/24h</p>
         </div>
 
         <form className="contact-form" onSubmit={(e) => {
